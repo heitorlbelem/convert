@@ -7,41 +7,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Convert JS</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inter:opsz,wght@14..32,100..900&display=swap"
-    rel="stylesheet"
-  >
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <img src="assets/logo.svg" alt="">
+
   <main>
-    <img src="assets/logo.svg" alt="">
-
-    <div class="main-container">
-      <form class="container">
-        <div class="input-wrapper focused">
-          <label for="amount">Valor</label>
-          <input type="number" name="amount" id="amount" />
-        </div>
-
-        <div class="select-wrapper">
-          <label for="coin">Moeda</label>
-          <select name="coin" id="coint">
-            <option value="">Selecione a Moeda</option>
-            <option value="euro">Euro</option>
-            <option value="dollar">Dólar Americano</option>
-          </select>
-        </div>
-
-        <button class="disabled">Converter em reais</button>
-      </form>
-
-      <div class="result">
-        <span>US$ 1 = R$ 4,86</span>
-        <p>486,00 Reais</p>
+    <form>
+      <div class="wrapper">
+        <label for="amount">Valor</label>
+        <input type="number" name="amount" id="amount" placeholder="0,00" required/>
       </div>
-    </div>
+
+      <div class="wrapper">
+        <label for="currency">Moeda</label>
+        <select name="currency" id="currencyt">
+          <option value="" disabled selected hidden>Selecione a moeda</option>
+          <option value="USD">Dólar Americano</option>
+          <option value="EUR">Euro</option>
+          <option value="GBP">Libra Esterlina</option>
+        </select>
+      </div>
+
+      <button type="submit">Converter em reais</button>
+    </form>
+
+    <footer>
+      <span id="description">US$ 1 = R$ 4,86</span>
+      <p id="result">486,00 Reais</p>
+    </footer>
   </main>
 </body>
 </html>
