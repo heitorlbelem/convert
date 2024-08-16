@@ -144,3 +144,7 @@ footer {
 
   display: none;
 }
+
+.show-result {
+  display: flex;
+}
