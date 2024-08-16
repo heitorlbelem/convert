@@ -53,6 +53,8 @@ main {
   width: 48rem;
   border-radius: 2.4rem;
   border: 1px solid var(--blue-500);
+
+  overflow-y: hidden;
 }
 
 form {
@@ -62,9 +64,6 @@ form {
   gap: 2rem;
 
   padding: 5.6rem 6.4rem;
-  border-top-left-radius: 2.4rem;
-  border-top-right-radius: 2.4rem;
-  border: 1px solid var(--blue-500);
 
   background-color: var(--blue-300);
 
@@ -142,4 +141,6 @@ footer {
     color: var(--white);
     font: 700 3.2rem/1.5 var(--ff-ibm);
   }
+
+  display: none;
 }
